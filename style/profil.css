@@ -1,0 +1,17 @@
+.profile-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-item {
+  margin: 20px 0;
+}
+.profile-item h3 {
+  margin-bottom: 10px;
+}
+.profile-item p {
+  margin-bottom: 0;
+}
