@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+    background-color: aquamarine;
+};
+
+.login{
+    background-color: aquamarine;
+}
+
+.btn-login{
+    width: 198px;
+    height: 53px;
+    left: 87px;
+    top: 512px;
+    color: white;
+    background: #395144;
+    border-radius: 30px;
+    border: 0;
+}
+.btn-daftar{
+    width: 198px;
+    height: 53px;
+    left: 87px;
+    top: 512px;
+    color: white;
+    border: 0;
+    background: #9BA17B;
+    border-radius: 30px;
+}
