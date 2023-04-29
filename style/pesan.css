@@ -277,12 +277,13 @@ button[type="submit"] {
   margin-right: 30px;
 }
 
-.img {
+.imgPesan {
   width: 700px;
-  height: 400px;
+  height: 100px;
   border-radius: 20px;
   border: 2px solid black;
   margin-top: 20px;
+  margin-bottom: 40px;
   background-color: #00cba9;
   object-fit: cover;
   display: flex;
@@ -298,6 +299,17 @@ button[type="submit"] {
   margin: auto;
   font-size: 20px;
   font-weight: bold;
+  font-family: "comic sans ms";
+  color: #364f6b;
+  display: block;
+}
+
+.kataAtas {
+  width: 700px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
   font-family: "comic sans ms";
   color: #364f6b;
   display: block;
