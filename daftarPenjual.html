@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pendaftaran Akun Penjual</title>
+    <link rel="stylesheet" type="text/css" href="style/daftarPenjual.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="register-form">
+        <h1>Pendaftaran Akun Penjual</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="email">Nomor Telepon:</label>
+        <input
+          type="nomorTelepon"
+          id="nomorTelepon"
+          name="nomorTelepon"
+          required
+        />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label for="confirm-password">Konfirmasi Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+        <label for="store-name">Nama Toko:</label>
+        <input type="text" id="store-name" name="store-name" required />
+        <label for="store-description">Deskripsi Toko:</label>
+        <textarea
+          id="store-description"
+          name="store-description"
+          required
+        ></textarea>
+        <input type="submit" value="Daftar Akun" />
+      </form>
+    </div>
+  </body>
+</html>
