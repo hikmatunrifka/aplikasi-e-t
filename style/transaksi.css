@@ -62,7 +62,23 @@ body {
   background-color: aquamarine;
  }
 
- .tengah{
+
+/* CSS untuk div dengan class "table-responsive" */
+.table-responsive {
   display: flex;
-  align-content: center;
- }
+  justify-content: center; /* Agar div berada di tengah horizontal */
+  align-items: center; /* Agar div berada di tengah vertical */
+  height: 100vh; /* Mengatur tinggi div menjadi 100% dari tinggi viewport */
+}
+
+/* CSS untuk div dengan class "d-flex justify-content-center align-items-end" */
+.d-flex {
+  display: flex;
+  justify-content: space-between; /* Agar button berada di tengah kanan dan kiri */
+  align-items: center; /* Agar button berada di tengah vertical */
+  margin: auto; /* Mengatur margin auto agar div berada di tengah horizontal */
+  max-width: 500px; /* Mengatur lebar maksimal div */
+  padding: 0 20px; /* Memberikan padding agar button tidak terlalu dekat dengan tepi div */
+  box-sizing: border-box; /* Mengatur box-sizing agar padding tidak mempengaruhi ukuran div */
+}
+

@@ -6,7 +6,7 @@ body {
   
   /* Styling untuk elemen <h1> dan <h2> */
   h1, h2 {
-    color: #07a90c;
+    color: #20a75b;
   }
   
   /* Styling untuk elemen <form> */
@@ -18,17 +18,18 @@ body {
   input[type="text"],
   button {
     border-radius: 0;
+    color: #20a75b;
   }
   
   /* Styling untuk elemen <button> */
   button {
-    background-color: #179f52;
-    border-color: #179f52;
+    background-color: #20a75b;
+    border-color: #20a75b;
   }
   
   button:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #20a75b;
+    border-color: #20a75b;
   }
   
   /* Styling untuk elemen <ul> dan <li> */
