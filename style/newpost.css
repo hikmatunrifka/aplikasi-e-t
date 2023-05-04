@@ -34,20 +34,20 @@
   
   .menu {
     float: left;
-    background-color: #00cba9;
+    background-color: #9BA17B;
   }
   
   nav {
     width: 100%;
     margin: auto;
     display: inline-block;
-    background-color: #00cba9;
+    background-color: #9BA17B;
     line-height: 80px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid #364f6b;
+    border-bottom: 1px solid #000;
   }
   
   nav ul {
@@ -80,17 +80,17 @@
   }
   
   h2 {
-    font-family: "comic sans ms";
+    font-family: "arial";
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: #000;
     width: 100%;
     line-height: 50px;
   }
   
   a.tbl-biru {
-    background: #3f72af;
+    background: #000;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
@@ -105,7 +105,7 @@
   }
   
   a.tbl-pink {
-    background: #3f72af;
+    background: #000;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
@@ -147,11 +147,11 @@
   }
   
   .kartu-tutor p {
-    font-family: "comic sans ms";
+    font-family: "arial";
     font-weight: 800;
     font-size: 25px;
     text-align: center;
-    color: #364f6b;
+    color: #000;
   }
   
   .partner-list {
@@ -190,11 +190,11 @@
   }
   
   h3 {
-    font-family: "comic sans ms";
+    font-family: "arial";
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #364f6b;
+    color: #000;
     width: 100%;
     line-height: 50px;
   }
@@ -216,6 +216,7 @@
       display: block;
       width: 100%;
       text-align: center;
+      color: #000
     }
   
     nav .menu {
@@ -256,19 +257,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00cba9;
+    background-color: #9BA17B;
   }
   
   input[type="text"] {
     width: 200px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 5px;
     margin-right: 5px;
   }
   
   button[type="submit"] {
-    background-color: #3f72af;
+    background-color: #000;
     color: #fff;
     padding: 10px;
     border: none;
@@ -283,14 +284,14 @@
     border-radius: 20px;
     border: 2px solid black;
     margin-top: 20px;
-    background-color: #00cba9;
+    background-color: #9BA17B;
     object-fit: cover;
     display: flex;
     justify-content: center;
     text-align: justify;
     font-size: 50px;
     align-items: center;
-    font-family: "comic sans ms";
+    font-family: "arial";
   }
   
   .deskripsi {
@@ -298,8 +299,8 @@
     margin: auto;
     font-size: 20px;
     font-weight: bold;
-    font-family: "comic sans ms";
-    color: #364f6b;
+    font-family: "arial";
+    color: #000;
     display: block;
 
   }
@@ -310,7 +311,7 @@
     margin-right: 0px;
     font-size: 20px;
     font-weight: bold;
-    font-family: "comic sans ms";
+    font-family: "arial";
     display: flex;
     justify-content: center;
     margin: auto;
@@ -327,7 +328,7 @@
     margin-right: 0px;
     font-size: 20px;
     font-weight: bold;
-    font-family: "comic sans ms";
+    font-family: "arial";
     display: flex;
     justify-content: center;
     margin: auto;
@@ -344,7 +345,7 @@
     margin-right: 0px;
     font-size: 20px;
     font-weight: bold;
-    font-family: "comic sans ms";
+    font-family: "arial";
     display: flex;
     justify-content: left;
     margin: auto;
@@ -364,7 +365,7 @@
   .logoKonten {
     width: 100px;
     margin: auto;
-    background: #00cba9;
+    background: #9BA17B;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -378,7 +379,7 @@
   .logoKonten1 {
     width: 150px;
     margin: auto;
-    background: #00cba9;
+    background: #9BA17B;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
