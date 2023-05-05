@@ -1,4 +1,12 @@
+body{
+  background-color: #28a745;
+  border-color: #28a745;
+}
 .follow-btn {
-    background-color: #28a745;
-    border-color: #28a745;
-  }
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.card-img-top{
+  height: 200px;
+  object-fit: cover;
+}

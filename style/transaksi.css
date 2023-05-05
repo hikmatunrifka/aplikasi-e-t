@@ -23,8 +23,8 @@ body {
 }
 
 .card-text {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .form-label {
@@ -35,7 +35,7 @@ body {
   border-radius: 10px;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 1.2rem;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #9BA17B;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -52,14 +52,10 @@ body {
   font-weight: bold;
 }
 
-.btn-primary:hover {
-  background-color: #0069d9;
-  cursor: pointer;
-}
  .img {
   width: 80px;
   height: 80px;
-  background-color: aquamarine;
+  background-color: rgb(7, 20, 16);
  }
 
 
