@@ -1,0 +1,41 @@
+/* Styling untuk elemen <body> */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Styling untuk elemen <h1> dan <h2> */
+  h1, h2 {
+    color: #000000;
+  }
+  
+  /* Styling untuk elemen <form> */
+  form {
+    margin-bottom: 30px;
+  }
+  
+  /* Styling untuk elemen <input> dan <button> */
+  input[type="text"],
+  button {
+    border-radius: 0;
+  }
+  
+  /* Styling untuk elemen <button> */
+  .btn-cari {
+    background-color: #9BA17B;
+    border-color: #9BA17B;
+  }
+  
+  
+  /* Styling untuk elemen <ul> dan <li> */
+  ul.list-group {
+    border: 1px solid #395144;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  li.list-group-item {
+    border: none;
+    padding: 5px;
+  }
+  

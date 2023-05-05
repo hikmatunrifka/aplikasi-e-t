@@ -1,0 +1,80 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-content: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #9BA17B;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+ .img {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(7, 20, 16);
+ }
+
+
+/* CSS untuk div dengan class "table-responsive" */
+.table-responsive {
+  display: flex;
+  justify-content: center; /* Agar div berada di tengah horizontal */
+  align-items: center; /* Agar div berada di tengah vertical */
+  height: 100vh; /* Mengatur tinggi div menjadi 100% dari tinggi viewport */
+}
+
+/* CSS untuk div dengan class "d-flex justify-content-center align-items-end" */
+.d-flex {
+  display: flex;
+  justify-content: space-between; /* Agar button berada di tengah kanan dan kiri */
+  align-items: center; /* Agar button berada di tengah vertical */
+  margin: auto; /* Mengatur margin auto agar div berada di tengah horizontal */
+  max-width: 500px; /* Mengatur lebar maksimal div */
+  padding: 0 20px; /* Memberikan padding agar button tidak terlalu dekat dengan tepi div */
+  box-sizing: border-box; /* Mengatur box-sizing agar padding tidak mempengaruhi ukuran div */
+}
+
