@@ -19,13 +19,13 @@
         <div class=" d-flex flex-column">
           <div class=" text-center">
             <div class="mb-3"">
-              <a href="#" class="btn btn-primary tombol text-decoration-none w-25"><h4>Kebijakan Privasi</h4></a>
+              <a href="#" class="btn btn-primary tombol text-decoration-none w-25" style="background-color: #9BA17B;"><h4>Kebijakan Privasi</h4></a>
             </div>
             <div class="mb-3"">
-              <a href="#" class="btn btn-primary tombol text-decoration-none w-25"><h4>Ketentuan Pengguna</h4></a>
+              <a href="#" class="btn btn-primary tombol text-decoration-none w-25" style="background-color: #9BA17B;"><h4>Ketentuan Pengguna</h4></a>
             </div>
             <div class="mb-3"">
-              <a href="#" class="btn btn-primary tombol text-decoration-none w-25"><h4>Laporkan Masalah</h4></a>
+              <a href="#" class="btn btn-primary tombol text-decoration-none w-25" style="background-color: #9BA17B;"><h4>Laporkan Masalah</h4></a>
             </div>
           </div>
         </div>

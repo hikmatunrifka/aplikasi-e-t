@@ -1,52 +1,49 @@
-<?php
-require"fungsi.php";
-
-if( isset($_POST["daftar"])){
-    if( daftar($_POST)>0){
-        echo "berhasil";
-    }else{
-        echo "gagal";
-    }
-}
-
-?>
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Registrasi</title>
-    <style>
-        label{
-            display: block;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Trash</title>
+    <link rel="icon" href="/foto/Group 150.svg">
+    <link rel="stylesheet" href="style/daftar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
 
-<h1>Halaman Registrasi</h1>
-<form action="" method="post">
-    <ul>
-        <li>
-            <label for="username">username</label>
-            <input type="text" name="username" id="username">
+  <body>
+    <nav class="navbar">
+        <div class="container-fluid te">
+          <a>Daftar</a>
+        </div>
+      </nav>
+      <div class="container mt-5 justify-content-center d-flex">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputNotelepon" class="form-label">Nomor Telepon</label>
+              <input type="text" class="form-control" id="exampleInputNotelepon" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputKodeverifikasi" class="form-label">Kode Verifikasi</label>
+                <input type="text" class="form-control" id="exampleInputKodeverifikasi" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputKonfirmasipassword" class="form-label">Email address</label>
+                  <input type="text" class="form-control" id="exampleInputKonfirmasipassword" aria-describedby="emailHelp">
+                </div>
+            <div>
+            <button type="submit" class="btn btn-primary mt-5 text-center">Buat Akun</button>
+            </div>
+          </form>
+      </div>
 
-            <label for="password">password</label>
-            <input type="password" name="password" id="password">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 
-            <label for="email">Email address</label>
-            <input type="text" name="email" id="email">
-
-            <label for="no_hp">nomor telepon</label>
-            <input type="int" name="no_hp" id="no_hp">
-        </li>
-        <li>
-            <button type="submit" name="register">Registrer</button>
-        </li>
-    </ul>
-</form>
-</body>
 </html>
