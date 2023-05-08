@@ -15,7 +15,7 @@ if($result > 0) {
     // Jika cocok, maka login berhasil
     $_SESSION['email_address'] = $email;
     // echo 'berhasil';
-    header("location: ../beranda.html"); // redirect ke halaman dashboard
+    header("location: ../beranda.php"); // redirect ke halaman dashboard
     // exit(); // Penting: pastikan untuk menghentikan eksekusi script setelah melakukan redirect
 } else {
     echo 'gagal';
