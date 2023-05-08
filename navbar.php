@@ -33,10 +33,7 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex ms-auto" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn text-white"  style="background-color: #395144;" type="submit">Search</button>
-      </form>
+        <a href="pencarian.php"><button class="btn text-white me-5" style="background-color: #395144;" type="submit">Pencarian</button></a>
     </div>
   </div>
 </nav>

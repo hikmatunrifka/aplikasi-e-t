@@ -8,7 +8,7 @@ include'navbar.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi e-T</title>
-    <link rel="stylesheet" href="style/konten.css">
+    
 </head>
 <body>
     <!-- untuk konten 1 -->
