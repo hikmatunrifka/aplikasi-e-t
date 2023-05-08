@@ -10,7 +10,7 @@
   <body>
   <nav class="navbar navbar-expand-lg" style="background-color: #9BA17B; ">
   <div class="container">
-    <a class="navbar-brand text-white" href="beranda.php"><img src="foto/Group 150.svg" width="40" class="me-3" >E-Trash</a>
+    <a class="navbar-brand text-white" href="login.php"><img src="foto/Group 150.svg" width="40" class="me-3" >E-Trash</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,8 +27,8 @@
             Pengaturan
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="bantuan.php">Bantuan</a></li>
-            <li><a class="dropdown-item" href="tentang.php">Tentang</a></li>
+            <li><a class="dropdown-item" href="halamanbantuan.php">Bantuan</a></li>
+            <li><a class="dropdown-item" href="halamantentang.php">Tentang</a></li>
             <li><a class="dropdown-item" href="akun.php">Akun</a></li>
           </ul>
         </li>
