@@ -5,36 +5,25 @@ include'navbar.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Trash</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi e-T</title>
-    
+    <title>Video tutorial membuat Bungga dari Gelas Plastik</title>
 </head>
 <body>
-    <!-- untuk konten 1 -->
-    <div><a class="logoShop" href="beranda.html"><a class="deskripsi" href="beranda.php"><img src="foto/Group 150.svg" lt="Image" height="53" width="53">Amishop</a></a></div>
-        <center><p class="img">
-            <a href="konten.php">Gambar</center></a></div>
-    <div>
-        <p class="deskripsi">Bungga Mawar dari Plastik</p>
-        <p class="deskripsi">Rp 50.000</p>
-        <p class="deskripsi">Stock : 20</p>
-        <center><p class="deskripsi">Deskripsi</p></center>
-        <p class="deskripsi">---------------------------------------------------------</p>
-        <p class="deskripsi">---------------------------------------------------------</p>
-        <p class="deskripsi">---------------------------------------------------------</p>
-        <p class="deskripsi">---------------------------------------------------------</p>
-        <p class="deskripsi">---------------------------------------------------------</p>
+        <center>
+            <img src="foto/bunga.JPG" class="mt-5" controls="true" width="854" height="480"></center>
+    <div >
+        <p class="text-center fs-2 mt-3 text-success" >Bungga dari Gelas Plastik</p>
+        <p class="text-center fs-4 mt-2 text-success" >Harga : 20.000</p>
+        <p class="text-center fs-4 mt-2 text-success">Stock : 20 </p>
+        <center><button type="button" class="btn btn-primary btn-lg mb-5">Beli Sekarang</button></center>
     </div>
 
-    <!-- untuk proses konten 1 -->
-    <div class="wrapperKonten">
-        <div class="menuKonten">
-            <button href="" class="logoKonten"><img src="foto/chatikon.png" lt="Image" height="40" width="40"></button>
-            <button href="" class="logoKonten">Keranjang</button>
-            <button href="" class="logoKonten1">Beli Sekarang</button>
-        </div>
-    </div>
     
 </body>
 </html>

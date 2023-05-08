@@ -18,29 +18,25 @@ include'navbar.php';
     <!-- untuk konten 1 -->
     <div>
         <center>
-        <a href="konten.php"><img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;"></a>
-        <a href="konten.php"><img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;"></a>
-        <p>Amishop</p><p>Harga: Rp 50.000</p></center></div>
+        <a href="kontenVideo.php"><img src="foto/bunga.JPG" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;"></a>
+        <a href="konten.php"><img src="foto/bunga.JPG" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;"></a>
 
     <!-- untuk konten 2 -->
     <div>
         <center>
         <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
         <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <p>Kamushop</p><p>Harga: Rp 30.000</p></center></div>
 
     <!-- untuk konten 3 -->
     <div>
         <center>
         <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
         <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <p>Kamushop</p><p>Harga: Rp 30.000</p></center></di>
     
     <!-- untuk konten 4 -->
     <center>
         <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
         <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <p>Kamushop</p><p>Harga: Rp 30.000</p></center></di>
 
 </body>
 </html>
