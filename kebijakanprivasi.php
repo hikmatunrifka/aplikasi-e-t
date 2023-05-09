@@ -1,3 +1,7 @@
+<?php
+include'navbar.php';
+?>
+
 <!DOCTYPE html>
 <html>
   <a href="halamantentang.php" role="button">
