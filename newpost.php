@@ -10,8 +10,8 @@ include'navbar.php';
     <title>Aplikasi e-T</title>
     <link rel="stylesheet" href="style/newpost.css">
 </head>
-<body>
-
+<body>n
+;-/
     <!-- untuk konten 1 -->
     <div class="wrapperKonten">
       <div class="menuKonten">
