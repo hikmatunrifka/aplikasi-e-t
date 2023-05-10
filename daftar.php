@@ -16,26 +16,22 @@
         </div>
       </nav>
       <div class="container mt-5 justify-content-center d-flex">
-        <form>
+        <form action='auth/daftar_proses.php' method='post'>
             <div class="mb-3">
               <label for="exampleInputNotelepon" class="form-label">Nomor Telepon</label>
-              <input type="text" class="form-control" id="exampleInputNotelepon" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="exampleInputNotelepon" name="no_telepon" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-                <label for="exampleInputKodeverifikasi" class="form-label">Kode Verifikasi</label>
-                <input type="text" class="form-control" id="exampleInputKodeverifikasi" aria-describedby="emailHelp">
-              </div>
               <div class="mb-3">
                 <label for="exampleInputUsername" class="form-label">Username</label>
-                <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="exampleInputUsername" name="username" aria-describedby="emailHelp">
               </div>
               <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control" name="password" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputKonfirmasipassword" class="form-label">Email address</label>
-                  <input type="text" class="form-control" id="exampleInputKonfirmasipassword" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" id="exampleInputKonfirmasipassword" name="email" aria-describedby="emailHelp">
                 </div>
             <div>
             <button type="submit" class="btn btn-primary mt-5 text-center">Buat Akun</button>

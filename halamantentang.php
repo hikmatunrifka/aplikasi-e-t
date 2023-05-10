@@ -1,5 +1,7 @@
 <?php
+include'navbar.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +38,7 @@
               </a>
             </div>
             <div class="mb-3">
-              <a href="halamanbantuan.html" class="btn btn-primary tombol text-decoration-none w-25"
+              <a href="halamanbantuan.php" class="btn btn-primary tombol text-decoration-none w-25"
                 style="background-color: #9BA17B;">
                 <h4>Laporkan Masalah</h4>
               </a>
