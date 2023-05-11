@@ -1,11 +1,14 @@
 
 body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #ffff;
-  border-color: #ffff;
+  border-color: #9BA17B;
+  color:#000000;
 }
 .follow-btn {
   background-color: #9BA17B;
   border-color: #9BA17B;
+  color: #ffff;
 }
 .card-img-top{
   height: 200px;
