@@ -1,7 +1,3 @@
-<?php
-include'navbar.php';
-?>
-
 <!DOCTYPE html>
 <html>
   
@@ -55,13 +51,41 @@ include'navbar.php';
         Laporkan Masalah
       </h2>
       <p>
-        Laporkan Masalah Anda Pada Alamat Email di Bawah:
+        Laporkan Masalah Anda Pada Alamat Email dan WhatsApp di Bawah:
         <p></p>
-        e_t@gmai.com
-      </p></center>
-    </div>
+        <body>
+        <body>
+	<div class="container mt-5">
+		<div class="row mt-5">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h4>WhatsApp</h4>
+					</div>
+					<div class="card-body">
+					<img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-square2-512.png" width="50" height="50" alt="WhatsApp Logo">
+						<p>Click the button below to chat on WhatsApp:</p>
+						<a href="https://api.whatsapp.com/send?phone=+6281234567890" class="btn btn-success" target="_blank">Chat on WhatsApp</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">
+						<h4>Email</h4>
+					</div>
+					<div class="card-body">
+					<img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-512.png" width="50" height="50" alt="Email Logo">
+						<p>Click the button below to send an email:</p>
+						<a href="mailto:example@gmail.com" class="btn btn-primary" target="_blank">Send Email</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     <div class="footer">
       <p>&copy; 2023 E-Trash. All rights reserved.</p>
     </div>
   </body>
+  
 </html>
