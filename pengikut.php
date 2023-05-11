@@ -1,3 +1,6 @@
+<?php
+include'navbar.php';
+?>
 
 <?php
 include'navbar.php';
@@ -5,6 +8,9 @@ include'navbar.php';
 
 <!DOCTYPE html>
 <html>
+	<a class="btn btn-link" href="#" role="button">
+		<i class="bi bi-arrow-left-circle-fill" style="font-size: 2rem;"></i> Kembali
+	 </a>
 <head>
 	<title>Daftar Pengikut</title>
 	<!-- memanggil file CSS Bootstrap -->
