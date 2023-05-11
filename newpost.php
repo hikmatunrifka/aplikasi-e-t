@@ -5,33 +5,49 @@ include'navbar.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Trash</title>
+    <link rel="stylesheet" href="style/newpost.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikasi e-T</title>
-    <link rel="stylesheet" href="style/newpost.css">
+    <title>E-Trash</title>
 </head>
-<body>n
-;-/
-    <!-- untuk konten 1 -->
-    <div class="wrapperKonten">
-      <div class="menuKonten">
-        <a class="logoShop" href=""><a class="deskripsi" href=""> 
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-          <a class="logoShop" href="">New Post</a>
-          <a class="logoShop" href="">Bagikan</a>
-        </div></div>
-        <center><p class="img">
-            <a href="">+</center></a></div>
-    <div>
-        <p class="deskripsi">Tulis Nama Produk <input type="text" id="namaProduk"> 
-        <p class="deskripsi">Harga <input type="Tulis Nama Produk" id="namaProduk">
-        <p class="deskripsi">Stock <input type="Tulis Nama Produk" id="namaProduk"> 
-        <p></p>
-        <p class="deskripsi">Deskripsi</p>
-        <p class="deskripsi"><input type="Tulis Nama Produk" id="namaProduk"> 
-    </div>
+<body>
+  <div class="container mt-4">
+    <h1>Post Video</h1>
+    <hr class="border border-success border-2 opacity-90" >
+    
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Upload Video</label>
+        <input class="form-control" type="file" id="formFile"></div>
 
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Upload Thumbnail  Video</label>
+        <input class="form-control" type="file" id="formFile"></div>
+
+    <div class="mb-3 row mt-4">
+    <label  for="judul_video" class="col-sm-2 col-form-label">Judul Video</label>
+    <div class="col-sm-10 mb-3">
+      <input type="text" class="form-control" id="judul_video" placeholder="....">
+    </div>
+    <label for="bahan" class="col-sm-2 col-form-label">Bahan</label>
+    <div class="col-sm-10 mb-3">
+      <input type="text" class="form-control" id="bahan" placeholder="....">
+    </div>
+    <label for="alat" class="col-sm-2 col-form-label">Alat</label>
+    <div class="col-sm-10 mb-3">
+      <input type="text" class="form-control" id="alat" placeholder="....">
+    </div>
+    <div class="mb-3 row mt-3">
+      <div type="col">
+        <button type="button" class="btn-post">Pos Video</button>
+        <a href="masukAkun.php" type="button" class="btn-cancel text-decoration-none">Batal</a>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>

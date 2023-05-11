@@ -27,20 +27,20 @@ include'navbar.php';
           <div class=" text-center">
             <div class="mb-3">
               <a href="kebijakanprivasi.html" class="btn btn-primary tombol text-decoration-none w-25"
-                style="background-color: #9BA17B;">
+                style="background-color: #395144;">
                 <h4>Kebijakan Privasi</h4>
               </a>
             </div>
             <div class="mb-3">
               <a href="ketentuanpengguna.html" class="btn btn-primary tombol text-decoration-none w-25"
-                style="background-color: #9BA17B;">
+                style="background-color: #395144;">
                 <h4>Ketentuan Pengguna</h4>
               </a>
             </div>
             <div class="mb-3">
               <a href="halamanbantuan.php" class="btn btn-primary tombol text-decoration-none w-25"
-                style="background-color: #9BA17B;">
-                <h4>Laporkan Masalah</h4>
+                style="background-color: #395144;">
+                <h4>Bantuan</h4>
               </a>
             </div>
           </div>
@@ -49,15 +49,6 @@ include'navbar.php';
     </center>
   </main>
 
-
-  <footer class="abu">
-    <center>
-    </div>
-    <div class="footer">
-      <p>&copy; 2023 E-Trash. All rights reserved.</p>
-    </div>
-    </center>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-rg9zHkZg3SyX0gJnDf8i1xLve2c8V7d14bxv6T6M/7g48XPu6RptByNQrZoC/l8M"
