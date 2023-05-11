@@ -1,10 +1,13 @@
 <?php
 include'navbar.php';
 ?>
+<<<<<<< HEAD:pengikut.php
 
 <?php
 include'navbar.php';
 ?>
+=======
+>>>>>>> riska:pengikut.html
 
 <!DOCTYPE html>
 <html>
