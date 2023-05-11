@@ -33,7 +33,11 @@
           </ul>
         </li>
       </ul>
+<<<<<<< main
         <a href="pencarian.php"><button class="btn text-white me-5" style="background-color: #395144;" type="submit">Pencarian</button></a>
+=======
+        <a href="pencarian.php"><button class="btn text-white ms-auto"  style="background-color: #395144;" type="submit">Search</button></a>
+>>>>>>> pencarian
     </div>
   </div>
 </nav>

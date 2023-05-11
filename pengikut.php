@@ -1,10 +1,19 @@
+<?php
+include'navbar.php';
+?>
+<<<<<<< HEAD:pengikut.php
 
 <?php
 include'navbar.php';
 ?>
+=======
+>>>>>>> riska:pengikut.html
 
 <!DOCTYPE html>
 <html>
+	<a class="btn btn-link" href="#" role="button">
+		<i class="bi bi-arrow-left-circle-fill" style="font-size: 2rem;"></i> Kembali
+	 </a>
 <head>
 	<title>Daftar Pengikut</title>
 	<!-- memanggil file CSS Bootstrap -->
