@@ -15,28 +15,50 @@ include'navbar.php';
     <title>E-Trash</title>
 </head>
 <body>
-    <!-- untuk konten 1 -->
-    <div>
-        <center>
-        <a href="kontenVideo.php"><img src="foto/bunga.JPG" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;"></a>
-        <a href="konten.php"><img src="foto/bunga.JPG" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;"></a>
-
-    <!-- untuk konten 2 -->
-    <div>
-        <center>
-        <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-
-    <!-- untuk konten 3 -->
-    <div>
-        <center>
-        <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-    
-    <!-- untuk konten 4 -->
-    <center>
-        <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-
+    <div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 mt-4">
+          <div class="card mb-4">
+          <img src="file_kerajinan/img1.jpg" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5></div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card mb-4">
+          <img src="file_kerajinan/img2.jpg" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5></div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card mb-4">
+          <img src="file_kerajinan/img3.jpg" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5></div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card mb-4">
+          <img src="file_kerajinan/img1.jpg" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5></div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card mb-4">
+          <img src="file_kerajinan/img2.jpg" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5></div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card mb-4">
+          <img src="file_kerajinan/img3.jpg" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5></div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>
