@@ -1,6 +1,21 @@
 <?php
 include'navbar.php';
 ?>
+<?php
+    $host = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $db = 'db_e-trash';
+
+    $conn = mysqli_connect($host, $user, $pass, $db);
+
+    mysqli_select_db($conn, $db);
+?>
+<?php
+    $query = "SELECT * FROM tb_video;";
+    $sql = mysqli_query($conn, $query);
+    $result = mysqli_fetch_row($sql);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,28 +30,24 @@ include'navbar.php';
     <title>E-Trash</title>
 </head>
 <body>
-    <!-- untuk konten 1 -->
-    <div>
-        <center>
-        <a href="kontenVideo.php"><img src="foto/bunga.JPG" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;"></a>
-        <a href="konten.php"><img src="foto/bunga.JPG" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;"></a>
 
-    <!-- untuk konten 2 -->
-    <div>
-        <center>
-        <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-
-    <!-- untuk konten 3 -->
-    <div>
-        <center>
-        <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
-    
-    <!-- untuk konten 4 -->
-    <center>
-        <img src="foto/orang.png" class="rounded d-inline mt-5 me-5" width="300" height="250" style="background-color: #9BA17B;" >
-        <img src="foto/orang.png" class="rounded d-inline  mt-5 ms-5" width="300" height="250" style="background-color: #9BA17B;" >
+    <div class="container">
+    <div class="row mt-5 ">
+    <?php
+        while($result = mysqli_fetch_assoc($sql)){
+    ?>
+        <div class="col-md-4 mt-4 ">
+          <div class="card mb-4">
+          <div class="card-header"><img src="file_kerajinan/img1.jpg" height="30" width="30"> <a href="" class="text-decoration-none text-dark">amishop</a><img src="ikon/play.svg"> </div>
+          <img src="file_kerajinan/<?php echo $result['nama_thumbnail'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+          <div class="card-body">
+                <h5 class="card-title"><?php echo $result['judul_video'];?></h5></div>
+          </div>
+        </div>
+        <?php
+       }
+    ?>
+    </div>
 
 </body>
 </html>
