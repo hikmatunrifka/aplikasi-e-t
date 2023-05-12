@@ -45,7 +45,7 @@ include'navbar.php';
           </div>
         </div>
         <?php
-       }
+       }o
     ?>
     </div>
 
