@@ -1,6 +1,21 @@
 <?php
 include'navbar.php';
 ?>
+<?php
+    $host = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $db = 'db_e-trash';
+
+    $conn = mysqli_connect($host, $user, $pass, $db);
+
+    mysqli_select_db($conn, $db);
+?>
+<?php
+    $query = "SELECT * FROM tb_video;";
+    $sql = mysqli_query($conn, $query);
+    $result = mysqli_fetch_row($sql);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,18 +30,21 @@ include'navbar.php';
     <title>Video tutorial membuat Bungga dari Gelas Plastik</title>
 </head>
 <body>
+    <div class="container">
+<?php
+        $result = mysqli_fetch_assoc($sql);{
+    ?>
         <center>
             <video class="mt-5" controls="true" width="854" height="480">
-                <source src="video/video1.mp4" type="video/webm"></video></center>
+                <source src="video/<?php echo $result['nama_video'];?>" type="video/webm"></video></center>
     <div >
-        <p class="text-center fs-2 mt-3 text-success" >Bungga dari Gelas Plastik</p>
-        <p class="text-center fs-4 mt-2 text-success" >Deskripsi</p>
-        <p class="text-center fs-5 mt-2 text-success">
-            Bahan: Gelas plastik minuman bekas apa saja, Sedotan jumbo, Lakban kertas, Kawat besar, Kertas bekas, Plastik kresek</p>
-        <p class="text-center fs-5 mt-2 text-success">
-            Alat: Gunting, Tang, Pinset, Lem tembak, Korek gas</p>
+        <p class="text-center fs-2 mt-3 text-success" ><?php echo $result['judul_video'];?></p>
+        <p class="text-center fs-5 mt-2 text-success"><?php echo $result['bahan'];?></p>
+        <p class="text-center fs-5 mt-2 text-success"><?php echo $result['alat'];?></p>
     </div>
-
-    
+    <?php
+       }
+    ?>
+    </div>
 </body>
 </html>
