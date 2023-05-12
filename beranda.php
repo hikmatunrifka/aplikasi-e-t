@@ -37,15 +37,16 @@ include'navbar.php';
         while($result = mysqli_fetch_assoc($sql)){
     ?>
         <div class="col-md-4 mt-4 ">
+            
           <div class="card mb-4">
           <div class="card-header"><img src="file_kerajinan/img1.jpg" height="30" width="30"> <a href="" class="text-decoration-none text-dark">amishop</a><img src="ikon/play.svg"> </div>
-          <img src="file_kerajinan/<?php echo $result['nama_thumbnail'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top">
+          <a href="kontenVideo.php"><img src="file_kerajinan/<?php echo $result['nama_thumbnail'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top"></a>
           <div class="card-body">
                 <h5 class="card-title"><?php echo $result['judul_video'];?></h5></div>
           </div>
         </div>
         <?php
-       }o
+       }
     ?>
     </div>
 
