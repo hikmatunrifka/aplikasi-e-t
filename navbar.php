@@ -29,7 +29,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="halamanbantuan.php">Bantuan</a></li>
             <li><a class="dropdown-item" href="halamantentang.php">Tentang</a></li>
-            <li><a class="dropdown-item" href="akun.php">Keluar</a></li>
+            <li><a class="dropdown-item" href="login.php">Keluar</a></li>
           </ul>
         </li>
 
@@ -37,7 +37,6 @@
         <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
         <button class="btn text-white " style="background-color: #395144;" type="submit">Cari</button>
       </form>
-        <a href="pencarian.php"><button class="btn text-white ms-auto"  style="background-color: #395144;" type="submit">Search</button></a>
     </div>
   </div>
 </nav>
