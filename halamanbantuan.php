@@ -19,7 +19,7 @@
         font-size: 36px;
         text-align: center;
         color: #000000;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 30px;
       }
       .privacy {
@@ -64,8 +64,8 @@
 					</div>
 					<div class="card-body">
 					<img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-square2-512.png" width="50" height="50" alt="WhatsApp Logo">
-						<p>Click the button below to chat on WhatsApp:</p>
-						<a href="https://api.whatsapp.com/send?phone=+6281234567890" class="btn btn-success" target="_blank">Chat on WhatsApp</a>
+						<p>Klik di bawah untuk mengirim pesan ke WhatsApp:</p>
+						<a href="https://api.whatsapp.com/send?phone=+6281234567890" class="btn btn-success" target="_blank">Chat ke WhatsApp</a>
 					</div>
 				</div>
 			</div>
@@ -76,8 +76,8 @@
 					</div>
 					<div class="card-body">
 					<img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-512.png" width="50" height="50" alt="Email Logo">
-						<p>Click the button below to send an email:</p>
-						<a href="mailto:example@gmail.com" class="btn btn-primary" target="_blank">Send Email</a>
+						<p>Klik di bawah untuk mengirim Email:</p>
+						<a href="mailto:example@gmail.com" class="btn btn-primary" target="_blank">Kirim Email</a>
 					</div>
 				</div>
 			</div>

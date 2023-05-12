@@ -1,37 +1,24 @@
-body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    color: #333;
-    }
-    
-    h1 {
-    font-size: 36px;
-    text-align: center;
-    color: #0077b6;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    }
-    
-    .privacy {
-    margin: 0 auto;
-    width: 80%;
-    text-align: justify;
-    line-height: 1.5;
-    }
-    
-    .privacy h2 {
-    font-size: 24px;
-    color: #0077b6;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    }
-    
-    .privacy p {
-    margin-bottom: 20px;
-    }
-    
-    .footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #999;
-    }
+/* Menambahkan warna pada ikon */
+.whatsapp-icon {
+    color: #25d366;
+  }
+  
+  .email-icon {
+    color: #007bff;
+  }
+  
+  /* Mengatur ukuran dan jarak antar ikon */
+  .navbar .whatsapp-icon,
+  .navbar .email-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Menambahkan animasi ketika cursor diarahkan pada ikon */
+  .navbar .whatsapp-icon:hover,
+  .navbar .email-icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  

@@ -37,6 +37,7 @@
         <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
         <button class="btn text-white " style="background-color: #395144;" type="submit">Cari</button>
       </form>
+        <a href="pencarian.php"><button class="btn text-white ms-auto"  style="background-color: #395144;" type="submit">Search</button></a>
     </div>
   </div>
 </nav>
