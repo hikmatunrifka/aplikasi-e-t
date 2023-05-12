@@ -1,3 +1,7 @@
+<?php
+include'navbar.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,13 +35,15 @@
       </div>
     </div>
     <div class="row mt-5">
+    <hr class="border border-success border-2 opacity-90 ">
       <center> <b class="fs-4">Postingan</b>
         </center>
+        <hr class="border border-success border-2 opacity-90 mt-4">
         <div class="col-md-4 mt-4">
           <div class="card mb-4">
             <img src="https://via.placeholder.com/300" alt="Foto Postingan" class="card-img-top">
           </div>
-        </div>
+        </div>[]
         <div class="col-md-4 mt-4">
           <div class="card mb-4">
             <img src="https://via.placeholder.com/300" alt="Foto Postingan" class="card-img-top">
