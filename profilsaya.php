@@ -23,7 +23,7 @@ include'navbar.php';
       <div class="cols__container">
         <div class="left__col">
           <div class="img__container">
-            <img src="foto/bunga.jpg" alt="Dehya" />
+            <img src="foto/orang.png" alt="Dehya" />
             <span></span>
           </div>
           <h2>Dehya</h2>
@@ -31,9 +31,11 @@ include'navbar.php';
           <p>Dehya@gmail.com</p>
 
           <ul class="about">
-            <li><span>6</span>Post</li>
-            <li><span>322</span>Pengikut</li>
-            <li><span>500</span>Mengikuti</li>
+            <li class="mx-3"><span>6</span>Postingan</li>
+            <li class="mx-3"><span>322</span><a class="text-decorayion-none text-dark"href="pengikut.php">Pengikut</a></li>
+            <li class="mx-3"><span>500</span><a class="text-decoration-none text-dark" href="mengikuti.php">Mengikuti</a></li>
+
+           
           </ul>
 
           <div class="content">
@@ -47,12 +49,12 @@ include'navbar.php';
         <div class="right__col">
           <nav>
             <ul>
-              <li><a href="">Post</i> </a></li>
-              <li><a href="">save</a></li>
-              <li><a href="">keterangan barang</a></li>
+              <li class="mx-3"><a href="">Post</i> </a></li>
+              <li class="mx-3"><a href="">save</a></li>
+              <li class="mx-3"><a href="">keterangan barang</a></li>
             
             </ul>
-            <button>Edit Profil</button>
+            <button onclick="location.href='edit_profil.html'">Edit Profil</button>
           </nav>
 
           <div class="photos">

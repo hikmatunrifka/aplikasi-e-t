@@ -77,7 +77,7 @@ a {
 .header__wrapper .cols__container .left__col .about li {
   display: flex;
   flex-direction: column;
-  color: #818181;
+  color: #1d1d1d;
   font-size: 0.9rem;
 }
 .header__wrapper .cols__container .left__col .about li span {
@@ -191,4 +191,23 @@ a {
   .header__wrapper .cols__container .right__col nav button {
     margin-top: 0;
   }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about li {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about li span {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 5px;
 }
