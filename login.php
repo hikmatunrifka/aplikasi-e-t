@@ -61,7 +61,7 @@
         <input type="password" class="form-control" name="password" />
       </div>
       <div class="mb-3">
-        <p><a href="#">Lupa Password</a></p>
+        <p><a href="lupapassword.html">Lupa Password</a></p>
       </div>
       <button type="signin" class="btn btn-primary signin-btn">SignIn</button>
     </form>

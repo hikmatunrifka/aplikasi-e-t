@@ -14,6 +14,8 @@ $result = mysqli_num_rows($query);
 if($result > 0) {
     // Jika cocok, maka login berhasil
     $_SESSION['email_address'] = $email;
+    $_SESSION['nomor_telepon'] = $result['nomor_telepon'];
+    $_SESSION['username'] = $result['username'];
     // echo 'berhasil';
     header("location: ../beranda.php"); // redirect ke halaman dashboard
     // exit(); // Penting: pastikan untuk menghentikan eksekusi script setelah melakukan redirect
