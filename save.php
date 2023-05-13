@@ -54,7 +54,7 @@ include'navbar.php';
               <li class="mx-3"><a href="">keterangan barang</a></li>
             
             </ul>
-            <button onclick="location.href='editprofil.php'">Edit Profil</button>
+            <button onclick="location.href='editprofile.php'">Edit Profil</button>
           </nav>
 
           <div class="photos">
