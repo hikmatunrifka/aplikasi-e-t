@@ -7,26 +7,26 @@ include'navbar.php';
 $conn = mysqli_connect('localhost', 'root', '', 'db_e-trash');
 
 if ( isset($_POST["submit"])){
-  $namaVideo = $_POST["nama_video"];
-  $namaThumbnail = $_POST["nama_thumbnail"];
-  $judulVideo = $_POST["judul_video"];
-  $bahan = $_POST["bahan"];
-  $alat = $_POST["alat"];
+  $namaFoto = $_POST["nama_foto"];
+  $namaBarang = $_POST["nama_barang"];
+  $dekripsiBarang = $_POST["deskripsi_barang"];
+  $harga = $_POST["harga"];
+  $stok = $_POST["stok"];
 
-  $query = " INSERT INTO tb_video VALUES ('', '$namaVideo', '$namaThumbnail', '$judulVideo', '$bahan', '$alat')";
+  $query = " INSERT INTO tb_produk VALUES ('', '$namaFoto', '$namaBarang', '$dekripsiBarang', '$harga', '$stok')";
 
   mysqli_query($conn, $query);
 
   if( mysqli_affected_rows($conn) > 0){
     echo "
         <script>
-            alert('data berhasil ditambahkan!');
+            alert('Produk berhasil ditambahkan!');
             document.location.herf = 'beranda.php';
           </script>
       ";
   } else "
         <script>
-            alert('data gagal ditambahkan!');
+            alert('Produk gagal ditambahkan!');
             document.location.herf = 'beranda.php';
         </script>
       ";
@@ -50,36 +50,33 @@ if ( isset($_POST["submit"])){
 <body>
   <div class="container mt-4">
   <form action="" method="post">
-    <h1>Post Video</h1>
+    <h1>Post Produk</h1>
     <hr class="border border-success border-2 opacity-90" >
     
     <div class="mb-3">
-        <label for="formFile" class="form-label">Upload Video</label>
-        <input class="form-control" type="file" name="nama_video" id="formFile" required></div>
-
-    <div class="mb-3">
-        <label for="formFile1" class="form-label">Upload Thumbnail  Video</label>
-        <input class="form-control" type="file" name="nama_thumbnail" id="formFile1" required></div>
+        <label for="formFile" class="form-label">Upload Foto</label>
+        <input class="form-control" type="file" name="nama_foto" id="formFile" required></div>
 
     <div class="mb-3 row mt-4">
-    <label  for="judul_video" class="col-sm-2 col-form-label">Judul Video</label>
+
+    <label  for="nama_barang" class="col-sm-2 col-form-label">Nama Barang</label>
     <div class="col-sm-10 mb-3">
-      <input type="text" class="form-control" name="judul_video" id="judul_video" placeholder="...." required>
+      <input type="text" class="form-control" name="nama_barang" id="nama_barang" placeholder="...." required>
     </div>
 
-    <label for="bahan" class="col-sm-2 col-form-label">Bahan</label>
+    <label  for="deskripsi_barang" class="col-sm-2 col-form-label">Deskripsi Barang</label>
     <div class="col-sm-10 mb-3">
-      <input type="text" class="form-control" name="bahan" id="bahan" placeholder="...." required>
+      <input type="text" class="form-control" name="deskripsi_barang" id="deskripsi_barang" placeholder="...." required>
     </div>
 
-    <label for="alat" class="col-sm-2 col-form-label">Alat</label>
+    <label for="harga" class="col-sm-2 col-form-label">Harga</label>
     <div class="col-sm-10 mb-3">
-      <input type="text" class="form-control" name="alat" id="alat" placeholder="...." required>
+      <input type="number" class="form-control" name="harga" id="harga" placeholder="...." required>
     </div>
-
+    
     <div class="mb-3 row mt-3">
       <div type="col">
-        <button type="submit" name="submit" class="btn btn-primary" style="background-color: #395144;">Post Video</button>
+        <button type="submit" name="submit" class="btn btn-primary" style="background-color: #395144;">Post Produk</button>
         
         <a href="masukAkun.php" type="button" class="btn btn-danger">Batal</a>
       </div>

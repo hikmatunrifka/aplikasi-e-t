@@ -1,0 +1,56 @@
+/* CSS untuk halaman "Post Foto" */
+
+.container {
+    max-width: 700px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  hr {
+    margin-bottom: 2.5rem;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .form-control {
+    height: calc(2.75rem + 2px);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .col-form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  
+  .btn-post {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    background-color: #395144;
+    border-color: #395144;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .btn-cancel {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    background-color: #395144;
+    border-color: #395144;
+    color: white;
+    border-radius: 15px;
+
+  }
+  
