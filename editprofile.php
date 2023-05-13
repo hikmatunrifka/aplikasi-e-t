@@ -89,14 +89,14 @@ session_start();
   </head>
   <body>
     <h1>Pengaturan</h1>
-    <form>
+    <form action="auth/update_data.php" method= "post">
       <fieldset>
         <legend>Akun</legend>
         <label for="nama">Nama:</label>
-        <input type="text" class="form-control" id="name" value="<?php echo $_SESSION['username'];?>">
-        <input type="text" id="nama" name="nama" /><br />
+        <input type="text" class="form-control" id="name" name="username" value="<?php echo $_SESSION['username'];?>">
+        <br />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br />
+        <input type="email" id="email" name="email" value="<?php echo $_SESSION['email'];?>" /><br />
         <label for="password">Kata Sandi:</label>
         <input type="password" id="password" name="password" /><br />
         <label for="password">Kata Sandi Baru:</label>
