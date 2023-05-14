@@ -49,10 +49,7 @@ include'navbar.php';
         <div class="right__col">
           <nav>
             <ul>
-              <li class="mx-3"><a href="">Post</i> </a></li>
-              <li class="mx-3"><a href="save.php">save</a></li>
-              <li class="mx-3"><a href="">keterangan barang</a></li>
-            
+              <li class="mx-3"><a href="newpost.php">Post</i> </a></li>            
             </ul>
             <button onclick="location.href='editprofile.php'">Edit Profil</button>
           </nav>
