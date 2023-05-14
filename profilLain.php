@@ -24,12 +24,9 @@ include'navbar.php';
       <div class="col-md-8">
         <div class="d-flex justify-content-between align-items-center">
           <h1>Nama Pengguna</h1>
-          <button type="button" class="btn text-white" style="background-color: #395144"">Ikuti</button>
         </div>
         <ul class="list-unstyled">
           <li><strong>3</strong> Postingan</li>
-          <li><strong>0</strong> Pengikut</li>
-          <li><strong>0</strong> Diikuti</li>
         </ul>
         <p class="mb-4">Deskripsi singkat tentang diri anda.</p>
       </div>
