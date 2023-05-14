@@ -1,5 +1,6 @@
 <?php
 include'navbar.php';
+session_start();
 ?>
 
 <?php
@@ -11,9 +12,9 @@ if ( isset($_POST["submit"])){
   $namaBarang = $_POST["nama_barang"];
   $dekripsiBarang = $_POST["deskripsi_barang"];
   $harga = $_POST["harga"];
-  $stok = $_POST["stok"];
+  $idMasyarakat = $_SESSION['id'];
 
-  $query = " INSERT INTO tb_produk VALUES ('', '$namaFoto', '$namaBarang', '$dekripsiBarang', '$harga', '$stok')";
+  $query = " INSERT INTO tb_produk VALUES ('', '$idMasyarakat', '$namaFoto', '$namaBarang', '$dekripsiBarang', '$harga')";
 
   mysqli_query($conn, $query);
 

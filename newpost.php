@@ -1,5 +1,6 @@
 <?php
 include'navbar.php';
+session_start();
 ?>
 
 <?php
@@ -12,8 +13,9 @@ if ( isset($_POST["submit"])){
   $judulVideo = $_POST["judul_video"];
   $bahan = $_POST["bahan"];
   $alat = $_POST["alat"];
+  $idMasyarakat = $_SESSION['id'];
 
-  $query = " INSERT INTO tb_video VALUES ('', '$namaVideo', '$namaThumbnail', '$judulVideo', '$bahan', '$alat')";
+  $query = " INSERT INTO tb_video VALUES ('', '$idMasyarakat', '$namaVideo', '$namaThumbnail', '$judulVideo', '$bahan', '$alat')";
 
   mysqli_query($conn, $query);
 
