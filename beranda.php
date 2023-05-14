@@ -12,9 +12,15 @@ include'navbar.php';
     mysqli_select_db($conn, $db);
 ?>
 <?php
-    $query = "SELECT * FROM tb_video;";
+    $query = "SELECT * FROM tb_video JOIN tb_masyarakat ON tb_video.id_masyarakat = tb_masyarakat.id_masyarakat";
     $sql = mysqli_query($conn, $query);
-    $result = mysqli_fetch_row($sql);
+
+?>
+
+<?php
+    $query1 = "SELECT * FROM tb_produk JOIN tb_masyarakat ON tb_produk.id_masyarakat = tb_masyarakat.id_masyarakat";
+    $sql1 = mysqli_query($conn, $query1);
+
 ?>
 
 <!DOCTYPE html>
@@ -39,10 +45,25 @@ include'navbar.php';
         <div class="col-md-4 mt-4 ">
             
           <div class="card mb-4">
-          <div class="card-header"><img src="file_kerajinan/img1.jpg" height="30" width="30"> <a href="" class="text-decoration-none text-dark">amishop</a><img src="ikon/play.svg"> </div>
+          <div class="card-header"><img src="file_kerajinan/<?php echo $result['foto_profil'];?>" height="30" width="30"> <a href="" class="text-decoration-none text-dark"><?php echo $result['username'];?></a><img src="ikon/play.svg"> </div>
           <a href="kontenVideo.php"><img src="file_kerajinan/<?php echo $result['nama_thumbnail'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top"></a>
           <div class="card-body">
                 <h5 class="card-title"><?php echo $result['judul_video'];?></h5></div>
+          </div>
+        </div>
+        <?php
+       }
+    ?>
+        <?php
+        while($result1 = mysqli_fetch_assoc($sql1)){
+    ?>
+        <div class="col-md-4 mt-4 ">
+            
+          <div class="card mb-4">
+          <div class="card-header"><img src="file_kerajinan/<?php echo $result1['foto_profil'];?>" height="30" width="30"> <a href="" class="text-decoration-none text-dark"><?php echo $result1['username'];?></a><img src="ikon/play.svg"> </div>
+          <a href="kontenVideo.php"><img src="file_kerajinan/<?php echo $result1['nama_foto'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top"></a>
+          <div class="card-body">
+                <h5 class="card-title"><?php echo $result['nama_barang'];?></h5></div>
           </div>
         </div>
         <?php
