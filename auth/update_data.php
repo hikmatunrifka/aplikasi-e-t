@@ -2,30 +2,27 @@
 session_start();
 include 'koneksi.php';
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-$email = $_POST['email'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Mendapatkan nilai-nilai dari formulir
+    $nama = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $newPassword = $_POST["new_password"];
+    $id = $_SESSION['id'];
 
-if empty($username) || empty($password) || empty($email)) {
-    echo "Mohon lengkapi semua kolom pada formulir pembaruan data.";
-} else {
-    if (mysqli_connect_errno()) {
-        echo "Gagal terhubung ke MySQL: " . mysqli_connect_error();
+    // Query SQL untuk memperbarui data di tabel masyarakat
+    if (!empty($newPassword)) {
+        $sql = "UPDATE tb_masyarakat SET username = '$nama', email_address = '$email', password = '$newPassword' WHERE id_masyarakat = '$id'";
     } else {
-        $username = mysqli_real_escape_string($conn, $username);
-        $password = mysqli_real_escape_string($conn, $password);
-        $email = mysqli_real_escape_string($conn, $email);
+        $sql = "UPDATE tb_masyarakat SET username = '$nama', email_address = '$email' WHERE id_masyarakat = '$id'";
+    }
 
-        $query = "UPDATE tb_masyarakat SET username='$username', password='$password', email_address='$email'";
-
-        if (mysqli_query($conn, $query)) {
-            echo "Data berhasil diperbarui!";
-            header('location: ../data_pengguna.php');
-        } else {
-            echo "Terjadi kesalahan: " . mysqli_error($conn);
-        }
-
-        mysqli_close($conn);
+    if (mysqli_query($conn, $sql)) {
+        header('location:../profilsaya.php');
+        // echo "Data berhasil diperbarui.";
+    } else {
+        echo "Terjadi kesalahan: " . mysqli_error($conn);
     }
 }
+
 ?>

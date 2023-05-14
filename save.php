@@ -49,8 +49,8 @@ include'navbar.php';
         <div class="right__col">
           <nav>
             <ul>
-              <li class="mx-3"><a href="">Post</i> </a></li>
-              <li class="mx-3"><a href="save.php">save</a></li>
+              <li class="mx-3"><a href="profilsaya.php">Post</i> </a></li>
+              <li class="mx-3"><a href="">save</a></li>
               <li class="mx-3"><a href="">keterangan barang</a></li>
             
             </ul>
