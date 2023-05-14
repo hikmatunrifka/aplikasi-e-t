@@ -57,18 +57,20 @@
         <body>
 	<div class="container mt-5">
 		<div class="row mt-5">
-			<div class="col-md-6">
-				<div class="card">
-					<div class="card-header">
-						<h4>WhatsApp</h4>
-					</div>
-					<div class="card-body">
-					<img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-square2-512.png" width="50" height="50" alt="WhatsApp Logo">
-						<p>Klik di bawah untuk mengirim pesan ke WhatsApp:</p>
-						<a href="https://api.whatsapp.com/send?phone=+6281234567890" class="btn btn-success" target="_blank">Chat ke WhatsApp</a>
-					</div>
-				</div>
-			</div>
+    <div class="col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h4>WhatsApp</h4>
+    </div>
+    <div class="card-body">
+      <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-square2-512.png" width="50" height="50" alt="WhatsApp Logo">
+      <p>Klik di bawah untuk mengirim pesan ke WhatsApp:</p>
+      <a href="https://wa.me/6282368593533"class="btn btn-success" target="_blank">Chat ke WhatsApp </a>
+      <!-- <a href="https://api.whatsapp.com/send?phone=+6282368593533" class="btn btn-success" target="_blank">Chat ke WhatsApp</a> -->
+    </div>
+  </div>
+</div>
+
 			<div class="col-md-6">
 				<div class="card">
 					<div class="card-header">

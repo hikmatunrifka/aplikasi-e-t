@@ -33,11 +33,11 @@ include'auth/koneksi.php';
       </div>
     </nav>
     <div class="container mt-5 justify-content-center d-flex">
-      <form action="auth/auth.php" method="post">
+      <form action="auth/daftar_proses.php" method="post">
         <div class="mb-3">
         <div class="mb-3">
           <label for="password" class="form-label">Nomor Telepon</label>
-          <input type="nomortelepon" class="form-control" name="nomortelepon" />
+          <input type="nomortelepon" class="form-control" name="no_telepon" />
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Username</label>
@@ -47,7 +47,7 @@ include'auth/koneksi.php';
           <input
             type="text"
             class="form-control"
-            name="Email"
+            name="email"
             aria-describedby="emailHelp"
           />
         </div>
