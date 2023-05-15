@@ -1,6 +1,18 @@
 <?php
 session_start();
 include'navbar.php';
+include'auth/koneksi.php';
+$id_masyarakat = $_SESSION['id'];
+
+$query = $query = "SELECT * FROM tb_video JOIN tb_masyarakat ON tb_video.id_masyarakat = tb_masyarakat.id_masyarakat WHERE tb_masyarakat.id_masyarakat = '$id_masyarakat'";
+$result = mysqli_query($conn, $query);
+
+
+    $query1 = "SELECT * FROM tb_produk JOIN tb_masyarakat ON tb_produk.id_masyarakat = tb_masyarakat.id_masyarakat";
+    $result1 = mysqli_query($conn, $query1);
+
+// Looping untuk menampilkan data
+
 ?>
 
 <!DOCTYPE html>
@@ -30,37 +42,45 @@ include'navbar.php';
           <h2><?php echo $_SESSION['username'] ?></h2>
           <p><?php echo $_SESSION['email_address'] ?></p>
 
-          <ul class="about">
-            <li class="mx-3"><span>6</span>Postingan</li>
-            <li class="mx-3"><span>322</span><a class="text-decorayion-none text-dark"href="pengikut.php">Pengikut</a></li>
-            <li class="mx-3"><span>500</span><a class="text-decoration-none text-dark" href="mengikuti.php">Mengikuti</a></li>
-
-           
-          </ul>
-
-          <div class="content">
-            <p>
-              Mencari Berkah
-            </p>
-
-           
-          </div>
         </div>
         <div class="right__col">
           <nav>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Postingan
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Jenis Postingan</h1>
+      </div>
+      <div class="modal-body">
+      <center><button type="button" class="btn btn-primary me-5"><a href="newpost.php">Video Tutorial</a></button>
+      <button type="button" class="btn btn-primary"><a href="postfoto.php">Foto Produk</button></a></center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
             <ul>
-              <li class="mx-3"><a href="newpost.php">Post</i> </a></li>            
+              <li class="mx-3">Postingan</i> </a></li>            
             </ul>
             <button onclick="location.href='editprofile.php'">Edit Profil</button>
           </nav>
 
           <div class="photos">
-            <img src="foto/bunga.jpg" alt="Photo" />
-            <img src="foto/bunga.jpg" alt=foto/bunga.jpg/.>
-            <img src="foto/bunga.jpg" alt="Photo" />
-            <img src="foto/bunga.jpg" alt="Photo" />
-            <img src="foto/bunga.jpg" alt="Photo" />
-            <img src="foto/bunga.jpg" alt="Photo" />
+          <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+
+            <img src="file_kerajinan/<?php echo $row['nama_thumbnail'];?>"/>
+            <?php } ?>
+            <?php while ($row1 = mysqli_fetch_assoc($result1)) { ?>
+              <img src="file_kerajinan/<?php echo $row1['nama_foto'];?>"/>
+              <?php } ?>
           </div>
         </div>
       </div>
