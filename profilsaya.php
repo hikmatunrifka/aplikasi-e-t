@@ -75,15 +75,24 @@ $result = mysqli_query($conn, $query);
 
           <div class="photos">
           <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-
+            <div>
+            <a href="hapus.php?id=<?= $row["id_video"] ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+  <button class="btn btn-secondary">Hapus</button>
+</a>
             <img src="file_kerajinan/<?php echo $row['nama_thumbnail'];?>"/>
+            </div> 
             <?php } ?>
             <?php while ($row1 = mysqli_fetch_assoc($result1)) { ?>
-              <img src="file_kerajinan/<?php echo $row1['nama_foto'];?>"/>
+              <div>
+            <a href="hapusproduk.php?id=<?= $row1["id_produk"] ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+  <button class="btn btn-secondary">Hapus</button>
+</a>
+            <img src="file_kerajinan/<?php echo $row1['nama_foto'];?>"/>
+            </div> 
               <?php } ?>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </body>
 </html>
