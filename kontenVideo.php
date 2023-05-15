@@ -12,9 +12,9 @@ include'navbar.php';
     mysqli_select_db($conn, $db);
 ?>
 <?php
-    $query = "SELECT * FROM tb_video;";
-    $sql = mysqli_query($conn, $query);
-    $result = mysqli_fetch_row($sql);
+$query = "SELECT * FROM tb_video JOIN tb_masyarakat ON tb_video.id_masyarakat = tb_masyarakat.id_masyarakat";
+$sql = mysqli_query($conn, $query);
+
 ?>
 
 <!DOCTYPE html>
@@ -34,13 +34,35 @@ include'navbar.php';
 <?php
         $result = mysqli_fetch_assoc($sql);{
     ?>
-        <center>
-            <video class="mt-5" controls="true" width="854" height="480">
+        
+        <center><video class="mt-5" controls="true" width="854" height="480">
                 <source src="video/<?php echo $result['nama_video'];?>" type="video/webm"></video></center>
-    <div >
-        <p class="text-center fs-2 mt-3 text-success" ><?php echo $result['judul_video'];?></p>
-        <p class="text-center fs-5 mt-2 text-success"><?php echo $result['bahan'];?></p>
-        <p class="text-center fs-5 mt-2 text-success"><?php echo $result['alat'];?></p>
+<div >
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col"><img src="file_kerajinan/<?php echo $result['foto_profil'];?>" height="50" width="50"></th>
+      <th scope="col"><a href="profilLain.php" class="text-decoration-none text-dark">
+        <h3><?php echo $result['username'];?></h3></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <th scope="row"></th>
+      <td><p class="text-start fs-2 mt-3 text-success" ><?php echo $result['judul_video'];?></p>
+    </tr>
+    <tr>
+    <th scope="row"></th>
+      <td><p class="text-start fs-5 mt-2 text-success">Bahan : <?php echo $result['bahan'];?></p></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td colspan="2"><p class="text-start fs-5 mt-2 text-success mb-5">Alat : <?php echo $result['alat'];?></p></td></
+    </tr>
+  </tbody>
+</table>
+
+        
     </div>
     <?php
        }
