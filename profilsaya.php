@@ -57,8 +57,8 @@ $result = mysqli_query($conn, $query);
         <h1 class="modal-title fs-5" id="staticBackdropLabel">Jenis Postingan</h1>
       </div>
       <div class="modal-body">
-      <center><button type="button" class="btn btn-primary me-5"><a href="newpost.php">Video Tutorial</a></button>
-      <button type="button" class="btn btn-primary"><a href="postfoto.php">Foto Produk</button></a></center>
+      <center><button type="button" class="btn btn-primary me-5" ><a href="newpost.php" class="text-white">Video Tutorial</a></button>
+      <button type="button" class="btn btn-primary"><a href="postfoto.php" class="text-white">Foto Produk</button></a></center>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
