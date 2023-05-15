@@ -45,7 +45,7 @@ include'navbar.php';
         <div class="col-md-4 mt-4 ">
             
           <div class="card mb-4">
-          <div class="card-header"><img src="file_kerajinan/<?php echo $result['foto_profil'];?>" height="30" width="30"> <a href="" class="text-decoration-none text-dark"><?php echo $result['username'];?></a><img src="ikon/play.svg"> </div>
+          <div class="card-header"><img src="file_kerajinan/<?php echo $result['foto_profil'];?>" height="30" width="30"> <a href="profilLain.php?id=<?= $result['id_masyarakat']; ?>" class="text-decoration-none text-dark"><?php echo $result['username'];?></a><img src="ikon/play.svg"> </div>
           <a href="kontenVideo.php"><img src="file_kerajinan/<?php echo $result['nama_thumbnail'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top"></a>
           <div class="card-body">
                 <h5 class="card-title"><?php echo $result['judul_video'];?></h5></div>
@@ -60,10 +60,10 @@ include'navbar.php';
         <div class="col-md-4 mt-4 ">
             
           <div class="card mb-4">
-          <div class="card-header"><img src="file_kerajinan/<?php echo $result1['foto_profil'];?>" height="30" width="30"> <a href="" class="text-decoration-none text-dark"><?php echo $result1['username'];?></a><img src="ikon/play.svg"> </div>
-          <a href="kontenVideo.php"><img src="file_kerajinan/<?php echo $result1['nama_foto'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top"></a>
+          <div class="card-header"><img src="file_kerajinan/<?php echo $result1['foto_profil'];?>" height="30" width="30"> <a href="profilLain.php?id= <?= $result1['id_masyarakat']; ?>" class="text-decoration-none text-dark"><?php echo $result1['username'];?></a><img src="ikon/play.svg"> </div>
+          <a href="konten.php"><img src="file_kerajinan/<?php echo $result1['nama_foto'];?>" alt="Foto Postingan" height="250" width="300" class="card-img-top"></a>
           <div class="card-body">
-                <h5 class="card-title"><?php echo $result['nama_barang'];?></h5></div>
+                <h5 class="card-title"><?php echo $result1['nama_barang'];?></h5></div>
           </div>
         </div>
         <?php
